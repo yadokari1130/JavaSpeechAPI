@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		vr = () => {
+			SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
+			const recognition = new SpeechRecognition();
+
+			recognition.continuous = true;
+
+			var count = 0;
+			recognition.onresult = (event) => {
+				var text = event.results[count++][0].transcript;
+				document.getElementById("text").innerHTML = text;
+			}
+			recognition.onsoundend = (event) => {
+				vr();
+			}
+
+			recognition.start();
+		}
+
+		vr();
+	</script>
+	<title>Java Speech API</title>
+</head>
+<body>
+	<p id="text"></p>
+</body>
+</html>

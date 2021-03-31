@@ -1,0 +1,12 @@
+src/test
+/bin/
+/build/
+/gradle/
+.settings
+.classpath
+.project
+gradlew
+gradlew.bat
+settings.gradle
+.gradle/
+src/main/java/test
