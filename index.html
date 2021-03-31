@@ -11,13 +11,17 @@
 			var count = 0;
 			recognition.onresult = (event) => {
 				var text = event.results[count++][0].transcript;
-				document.getElementById("text").innerHTML = text;
+				document.getElementById("text").innerHTML = text + "/" + getUUID();
 			}
 			recognition.onsoundend = (event) => {
 				vr();
 			}
 
 			recognition.start();
+		}
+
+		getUUID = () => {
+			return new Date().getTime().toString(16) + Math.floor(1000 * Math.random()).toString(16);
 		}
 
 		vr();
