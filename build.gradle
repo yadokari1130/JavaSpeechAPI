@@ -16,6 +16,10 @@ repositories {
     jcenter()
 }
 
+plugins {
+	id("maven")
+}
+
 configurations {
     shade
     implementation.extendsFrom shade
