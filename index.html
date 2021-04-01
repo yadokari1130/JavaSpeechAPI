@@ -14,6 +14,10 @@
 				var text = event.results[count++][0].transcript;
 				document.getElementById("text").innerHTML = text + "/" + getUUID();
 			}
+			recognition.onerror = (event) => {
+				console.log("Error");
+				vr();
+			}
 			recognition.onsoundend = (event) => {
 				console.log("End");
 				vr();
