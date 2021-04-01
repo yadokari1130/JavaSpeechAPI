@@ -5,7 +5,7 @@ Java API for speech recognition using Web Speech API
 - Speech recognition for free and without token
 
 # How to install
-[![](https://jitpack.io/v/yadokari1130/JavaSpeechAPI.maven)](https://jitpack.io/#yadokari1130/JavaSpeechAPI)
+[![](https://jitpack.io/v/yadokari1130/JavaSpeechAPI.svg)](https://jitpack.io/#yadokari1130/JavaSpeechAPI)
 
 # How to use
 ```Java
