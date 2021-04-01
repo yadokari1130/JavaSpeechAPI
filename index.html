@@ -3,7 +3,6 @@
 <head>
 	<script>
 		vr = () => {
-			console.log("Start");
 			SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
 			var recognition = new SpeechRecognition();
 
@@ -15,11 +14,9 @@
 				document.getElementById("text").innerHTML = text + "/" + getUUID();
 			}
 			recognition.onerror = (event) => {
-				console.log("Error");
 				vr();
 			}
 			recognition.onsoundend = (event) => {
-				console.log("End");
 				vr();
 			}
 
