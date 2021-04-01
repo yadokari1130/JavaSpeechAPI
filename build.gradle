@@ -29,7 +29,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     shade group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
+    shade group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
 }
 
 jar {
